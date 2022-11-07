@@ -1,0 +1,161 @@
+@import url("https://fonts.google.com/specimen/Poppins?query=Poppins");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("./bg-intro-desktop.png");
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  gap: 50px;
+  font-size: 16px;
+}
+
+.data {
+  text-align: left;
+  width: 100%;
+  align-items: left;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 10px;
+  align-items: left;
+  justify-content: left;
+  margin-top: 25px;
+  max-width: 30rem;
+  font-size: 25px;
+}
+
+.container-form {
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  height: 420px;
+  margin-top: 10px;
+  padding: 20px;
+  color: black;
+}
+
+.general {
+  width: 100%;
+  height: 95%;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 30rem;
+  align-content: center;
+  border-radius: 8px;
+}
+.title {
+  border-radius: 8px;
+  background-color: purple;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.formulario {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input {
+  border: 1px solid rgba(90, 85, 81, 0.95);
+  background-color: white;
+  width: 100%;
+  height: 42px;
+  margin: 8px 9px;
+  padding: 20px;
+  border-radius: 8px;
+  border: thin solid rgba(186, 185, 185, 0.3);
+  font-weight: bold;
+  gap: 15px;
+}
+
+.boton {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: green;
+}
+.advertencia {
+  color: red;
+  font-size: 10px;
+  position: absolute;
+  top: 53px;
+  right: -2%;
+  display: none;
+}
+.advertencia-mostrar {
+  display: block;
+}
+.imgError {
+  position: absolute;
+  z-index: 100;
+  right: 2%;
+  top: 15px;
+  opacity: 0;
+}
+.imgError-mostrar {
+  opacity: 100;
+}
+.lineError-mostrar {
+  border: 2px solid red;
+}
+
+.grupoIn {
+  position: relative;
+}
+
+@media (min-width: 375px) and (max-width: 1023px) {
+  body {
+    flex-direction: column;
+    width: 100%;
+  }
+  .title {
+    width: 95%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .container-form {
+    width: 95%;
+  }
+  .container-form > p {
+    width: 95%;
+    height: 15%;
+    font-size: 14px;
+  }
+  form {
+    width: 95%;
+  }
+  input {
+    width: 97%;
+  }
+
+  button {
+    width: 97%;
+  }
+}
